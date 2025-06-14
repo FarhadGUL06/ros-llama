@@ -3,11 +3,11 @@ import ast
 from llama_cpp import Llama
 
 # Load action and object vocab
-with open("actions.json") as f:
+with open("./json/en/actions.json") as f:
     action_map = json.load(f)
     valid_actions = list(action_map.keys())
 
-with open("objects.json") as f:
+with open("./json/en/objects.json") as f:
     object_map = json.load(f)
     valid_objects = list(object_map.values())
 

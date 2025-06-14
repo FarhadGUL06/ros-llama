@@ -5,14 +5,35 @@ from std_msgs.msg import String
 import json
 from llama_cpp import Llama
 
+input_language = "ro"  # Romanian
+
 # Load action and object vocab
-with open("/root/actions.json") as f:
+
+if input_language == "en":
+    action_file = "./root/json/en/actions.json"
+    object_file = "/root/json/en/objects.json"
+elif input_language == "ro":
+    action_file = "/root/json/ro/actiuni.json"
+    object_file = "/root/json/ro/obiecte.json"
+
+
+with open(action_file) as f:
     action_map = json.load(f)
     valid_actions = list(action_map.keys())
 
-with open("/root/objects.json") as f:
+with open(object_file) as f:
     object_map = json.load(f)
     valid_objects = list(object_map.values())
+
+# Make sure the lists are initialized
+if not valid_actions:
+    rospy.logerr("No valid actions found in actions.json")
+    valid_actions = ["default_action"]
+    exit(1)
+if not valid_objects:
+    rospy.logerr("No valid objects found in objects.json")
+    valid_objects = ["default_object"]
+    exit(1)
 
 # Initialize the model
 llm = Llama(

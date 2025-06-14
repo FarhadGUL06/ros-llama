@@ -35,3 +35,15 @@
 /root/catkin_ws/build/gtest/googletest/CMakeFiles/test.dir
 /root/catkin_ws/build/gtest/googletest/CMakeFiles/gtest_main.dir
 /root/catkin_ws/build/gtest/googletest/CMakeFiles/gtest.dir
+/root/catkin_ws/build/llama_ros/CMakeFiles/install/strip.dir
+/root/catkin_ws/build/llama_ros/CMakeFiles/install/local.dir
+/root/catkin_ws/build/llama_ros/CMakeFiles/edit_cache.dir
+/root/catkin_ws/build/llama_ros/CMakeFiles/test.dir
+/root/catkin_ws/build/llama_ros/CMakeFiles/std_msgs_generate_messages_py.dir
+/root/catkin_ws/build/llama_ros/CMakeFiles/std_msgs_generate_messages_nodejs.dir
+/root/catkin_ws/build/llama_ros/CMakeFiles/std_msgs_generate_messages_lisp.dir
+/root/catkin_ws/build/llama_ros/CMakeFiles/std_msgs_generate_messages_eus.dir
+/root/catkin_ws/build/llama_ros/CMakeFiles/install.dir
+/root/catkin_ws/build/llama_ros/CMakeFiles/list_install_components.dir
+/root/catkin_ws/build/llama_ros/CMakeFiles/rebuild_cache.dir
+/root/catkin_ws/build/llama_ros/CMakeFiles/std_msgs_generate_messages_cpp.dir
