@@ -1,42 +1,42 @@
 [
   {
     "input": "Spala paharul si pune-l pe masa bucatarie.",
-    "output": ["spala", "pahar", "pune", "masa_bucatarie"]
+    "ref": ["spala", "pahar", "pune", "masa_bucatarie"]
   },
   {
     "input": "Ridica farfuria si aseaz-o pe masa de dining.",
-    "output": ["ridica", "farfurie", "aseaza", "masa_de_dining"]
+    "ref": ["ridica", "farfurie", "aseaza", "masa_de_dining"]
   },
   {
     "input": "Deschide cuptorul si pune tava inauntru.",
-    "output": ["deschide", "cuptor", "pune", "tava"]
+    "ref": ["deschide", "cuptor", "pune", "tava"]
   },
   {
     "input": "Apuca lingura si pune-o pe farfurie.",
-    "output": ["apuca", "lingura", "pune", "farfurie"]
+    "ref": ["apuca", "lingura", "pune", "farfurie"]
   },
   {
     "input": "Inchide frigiderul dupa ce ai luat sticla.",
-    "output": ["inchide", "frigider", "lua", "sticla"]
+    "ref": ["inchide", "frigider", "lua", "sticla"]
   },
   {
     "input": "Pliaza prosopul si aseaza-l pe scaun.",
-    "output": ["pliaza", "prosop", "aseaza", "scaun"]
+    "ref": ["pliaza", "prosop", "aseaza", "scaun"]
   },
   {
     "input": "Transporta cartea si pune-o pe masa bucatarie.",
-    "output": ["transporta", "carte", "pune", "masa_bucatarie"]
+    "ref": ["transporta", "carte", "pune", "carte", "masa_bucatarie"]
   },
   {
-    "input": "Spala cutitul si lasa-l sa se usuce.",
-    "output": ["spala", "cutit", "lasa", "usuca"]
+    "input": "Spala cutitul si pune-l pe masa.",
+    "ref": ["spala", "cutit", "pune", "cutit", "masa"]
   },
   {
     "input": "Apuca telecomanda si pune-o pe canapea.",
-    "output": ["apuca", "telecomanda", "pune", "canapea"]
+    "ref": ["apuca", "telecomanda", "pune", "telecomanda", "canapea"]
   },
   {
-    "input": "Pune telefonul pe masa si porneste-l.",
-    "output": ["pune", "telefon", "masa", "porneste"]
+    "input": "Pune telefonul pe masa.",
+    "ref": ["pune", "telefon", "masa"]
   }
 ]

@@ -1,42 +1,42 @@
 [
   {
     "input": "Pick the glass and place it on the kitchen table.",
-    "output": ["pick", "glass", "place", "kitchen_table"]
+    "ref": ["pick", "glass", "place", "kitchen_table"]
   },
   {
     "input": "Grab the book and put it on the shelf.",
-    "output": ["grab", "book", "put", "shelf"]
+    "ref": ["grab", "book", "put", "shelf"]
   },
   {
     "input": "Take the plate and place it on the table and grab a spoon.",
-    "output": ["pick", "plate", "place", "spoon"]
-  },
+    "ref": ["pick", "plate", "place", "plate", "table", "grab", "spoon"]
+  }, 
   {
     "input": "Pick up the laptop and put it on the bed.",
-    "output": ["pick", "laptop", "put", "bed"]
+    "ref": ["pick", "laptop", "put", "bed"]
   },
   {
     "input": "Take the pen and give it to John.",
-    "output": ["pick", "pen", "give", "john"]
+    "ref": ["pick", "pen", "give", "john"]
   },
   {
     "input": "Open the fridge and grab the bottle.",
-    "output": ["open", "fridge", "grab", "bottle"]
+    "ref": ["open", "fridge", "grab", "bottle"]
   },
   {
     "input": "Pick up the towel, fold it, and place it on the chair.",
-    "output": ["pick", "towel", "fold", "towel", "place", "chair"]
+    "ref": ["pick", "towel", "fold", "towel", "place", "towel", "chair"]
   },
   {
     "input": "Turn on the lamp and inspect the book.",
-    "output": ["turn_on", "lamp", "inspect", "book"]
+    "ref": ["turn_on", "lamp", "inspect", "book"]
   },
   {
     "input": "Wash the spoon and put it back in the drawer.",
-    "output": ["wash", "spoon", "put", "drawer"]
+    "ref": ["wash", "spoon", "put", "spoon", "drawer"]
   },
   {
     "input": "Take the key from the table and hide it under the mat.",
-    "output": ["pick", "key", "hide", "mat"]
+    "ref": ["pick", "key", "table", "hide", "mat"]
   }
 ]
