@@ -2,7 +2,7 @@
 
 This is a **ROS 1** project using `llama-cpp-python` with **LLaMA 3.2 Q8** for text parsing and command extraction.
 
-We tested both **Gemma 3** and **LLaMA 3.2** to evaluate both performance and time inference.
+We evaluated both **Gemma 3** and **LLaMA 3.2** to compare their performance and inference times.
 
 ![ROS-LLaMA Logo](llama-python/assets/ros-llama.png)
 
