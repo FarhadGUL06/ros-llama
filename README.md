@@ -71,7 +71,9 @@ We use [`llama-cpp-python`](https://pypi.org/project/llama-cpp-python/0.1.9/) wi
 
 ---
 
-## 🧩 Models Tested
+## 🧩 Models
+
+All the models we tested:
 
 ```
 models/
@@ -80,8 +82,8 @@ models/
 │   │   ├── google_gemma-3-12b-it-IQ2_M.gguf
 │   │   └── google_gemma-3-12b-it-Q4_K_M.gguf
 │   └── unsloth/       [2]
-│       ├── **gemma-3-12b-it-UD-IQ2_M.gguf**
-│       └── **gemma-3-12b-it-Q4_K_M.gguf**
+│       ├── **gemma-3-12b-it-UD-IQ2_M.gguf
+│       └── **gemma-3-12b-it-Q4_K_M.gguf
 └── llama3.2/
     ├── bartowski/     [3]
     │   ├── Llama-3.2-3B-Instruct-Q4_K_M.gguf
@@ -89,11 +91,11 @@ models/
     └── unsloth/       [4]
         ├── Llama-3.2-3B-Instruct-Q2_K.gguf
         ├── Llama-3.2-3B-Instruct-Q3_K_S.gguf
-        ├── **Llama-3.2-3B-Instruct-Q4_K_M.gguf**
-        └── **Llama-3.2-3B-Instruct-Q8_0.gguf**
+        ├── Llama-3.2-3B-Instruct-Q4_K_M.gguf
+        └── Llama-3.2-3B-Instruct-Q8_0.gguf
 ```
 
-The models we used for comparison
+The models we selected for comparison:
 
 | Model Variant               | Filename                            | Quantized Size |
 | --------------------------- | ----------------------------------- | -------------- |
