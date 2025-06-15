@@ -2,7 +2,9 @@
 
 This is a **ROS 1** project using `llama-cpp-python` with **LLaMA 3.2 Q8** for text parsing and command extraction.
 
-Instead of using **Gemma 3**, we switched to **LLaMA 3.2** due to better inference time performance.
+We tested both **Gemma 3** and **LLaMA 3.2** to evaluate both performance and time inference.
+
+![ROS-LLaMA Logo](llama-python/assets/ros-llama.png)
 
 ---
 
@@ -16,11 +18,6 @@ The system processes natural language instructions and transforms them into exec
 ---
 
 ## 📺 Demo
-
-<video width="640" height="360" controls>
-  <source src="llama-python/assets/ros-llama-compressed.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
 
 [▶ Watch on YouTube](https://youtu.be/qaU2OcJ1tYU)
 
