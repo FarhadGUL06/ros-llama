@@ -17,7 +17,8 @@ The system processes natural language instructions and transforms them into exec
 
 ## 📺 Demo
 
-[▶ Watch on YouTube](https://youtu.be/qaU2OcJ1tYU)
+[![Demo Video](llama-python/ros-llama.png)](https://youtu.be/qaU2OcJ1tYU)
+
 
 ## 📦 ROS Nodes
 
