@@ -15,6 +15,10 @@ The system processes natural language instructions and transforms them into exec
 
 ---
 
+## 📺 Demo
+
+[▶ Watch on YouTube](https://youtu.be/qaU2OcJ1tYU)
+
 ## 📦 ROS Nodes
 
 There are **3 nodes** in this system:
@@ -74,8 +78,8 @@ models/
 │   │   ├── google_gemma-3-12b-it-IQ2_M.gguf
 │   │   └── google_gemma-3-12b-it-Q4_K_M.gguf
 │   └── unsloth/       [2]
-│       ├── gemma-3-12b-it-UD-IQ2_M.gguf
-│       └── gemma-3-12b-it-Q4_K_M.gguf
+│       ├── **gemma-3-12b-it-UD-IQ2_M.gguf**
+│       └── **gemma-3-12b-it-Q4_K_M.gguf**
 └── llama3.2/
     ├── bartowski/     [3]
     │   ├── Llama-3.2-3B-Instruct-Q4_K_M.gguf
@@ -83,8 +87,8 @@ models/
     └── unsloth/       [4]
         ├── Llama-3.2-3B-Instruct-Q2_K.gguf
         ├── Llama-3.2-3B-Instruct-Q3_K_S.gguf
-        ├── Llama-3.2-3B-Instruct-Q4_K_M.gguf
-        └── Llama-3.2-3B-Instruct-Q8_0.gguf
+        ├── **Llama-3.2-3B-Instruct-Q4_K_M.gguf**
+        └── **Llama-3.2-3B-Instruct-Q8_0.gguf**
 ```
 
 The models we used for comparison
@@ -150,6 +154,50 @@ This script opens 3 new GNOME terminal windows:
 1. `publisher.py` takes user input and publishes to `/llama_parser/input`
 2. `ros-llama.py` parses the text using LLaMA and publishes the command list
 3. `subscriber.py` logs the parsed command list received from `/llama_parser/commands`
+
+---
+
+## 📊 Statistics
+
+### Model Details
+
+| Model Variant               | Filename                            | Layers | Size (GB) |
+| --------------------------- | --------------------------------- | ------ | --------- |
+| llama3.2-unsloth Q4         | `Llama-3.2-3B-Instruct-Q4_K_M.gguf` | 28     | 1.9       |
+| llama3.2-unsloth Q8         | `Llama-3.2-3B-Instruct-Q8_0.gguf` | 28     | 3.2       |
+| gemma3-unsloth Q2           | `gemma-3-12b-it-UD-IQ2_M.gguf`    | 49     | 4.1       |
+| gemma3-unsloth Q4           | `gemma-3-12b-it-Q4_K_M.gguf`      | 49     | 6.8       |
+
+### Test Results
+
+**English Examples (out of 10 good outputs):**
+
+| Model Variant               | Good Outputs |
+|----------------------------|--------------|
+| llama3.2-unsloth Q4         | 5            |
+| llama3.2-unsloth Q8         | 8            |
+| gemma3-unsloth Q2           | 10           |
+| gemma3-unsloth Q4           | 10           |
+
+**Romanian Examples (out of 10 good outputs):**
+
+| Model Variant               | Good Outputs |
+|----------------------------|--------------|
+| llama3.2-unsloth Q4         | 5            |
+| llama3.2-unsloth Q8         | 5            |
+| gemma3-unsloth Q2           | 6            |
+| gemma3-unsloth Q4           | 8            |
+
+### Hot Start vs Cold Start (seconds)
+
+| Model Variant               | Cold Start (s) | Hot Start (s) |
+|----------------------------|----------------|---------------|
+| llama3.2-unsloth Q4         | 7.243          | 1.460         |
+| llama3.2-unsloth Q8         | 10.386         | 2.551         |
+| gemma3-unsloth Q2           | 79.123         | 8.117         |
+| gemma3-unsloth Q4           | 33.082         | 9.876         |
+
+*Note:* `gemma3-unsloth Q4` is faster than `Q2` because CPUs are optimized for Q4/Q8 or 32-bit operations.
 
 ---
 

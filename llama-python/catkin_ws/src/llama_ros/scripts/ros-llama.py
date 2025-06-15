@@ -5,7 +5,7 @@ from std_msgs.msg import String
 import json
 from llama_cpp import Llama
 
-input_language = "ro"
+input_language = "en"
 
 # Models
 LLAMA3_2_UNSLOTH_Q4 = "/root/models/llama3.2/unsloth/Llama-3.2-3B-Instruct-Q4_K_M.gguf"
@@ -13,7 +13,7 @@ LLAMA3_2_UNSLOTH_Q8 = "/root/models/llama3.2/unsloth/Llama-3.2-3B-Instruct-Q8_0.
 GEMMA3_UNSLOTH_Q2 = "/root/models/gemma3/unsloth/gemma-3-12b-it-UD-IQ2_M.gguf"
 GEMMA3_UNSLOTH_Q4 = "/root/models/gemma3/unsloth/gemma-3-12b-it-Q4_K_M.gguf"
 
-MODEL_USED = GEMMA3_UNSLOTH_Q4
+MODEL_USED = LLAMA3_2_UNSLOTH_Q8
 
 
 # Load action and object vocab
