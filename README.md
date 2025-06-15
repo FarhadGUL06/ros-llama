@@ -82,8 +82,8 @@ models/
 │   │   ├── google_gemma-3-12b-it-IQ2_M.gguf
 │   │   └── google_gemma-3-12b-it-Q4_K_M.gguf
 │   └── unsloth/       [2]
-│       ├── **gemma-3-12b-it-UD-IQ2_M.gguf
-│       └── **gemma-3-12b-it-Q4_K_M.gguf
+│       ├── gemma-3-12b-it-UD-IQ2_M.gguf
+│       └── gemma-3-12b-it-Q4_K_M.gguf
 └── llama3.2/
     ├── bartowski/     [3]
     │   ├── Llama-3.2-3B-Instruct-Q4_K_M.gguf
